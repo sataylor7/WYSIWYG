@@ -1,0 +1,21 @@
+<ul class="links">
+    {{#links}}
+        <li id="{{this}}">
+            <a href="#" data-name="{{this}}" class="lnk">{{this}}</a>
+        </li>
+    {{/links}}
+</ul>
+<div class="fontAttributes">
+    <select name="fontName" class="font" id="fontName">
+        <option value="default">Select a font</option>
+        {{#fontName}}
+            <option value="{{this}}" id="{{this}}">{{this}}</option>
+        {{/fontName}}
+    </select>
+    <select name="fontSize" class="font" id="fontSize">
+        <option value="default">Select a size</option>
+        {{#fontSize}}
+            <option value="{{this}}" id="{{this}}">{{this}}</option>
+        {{/fontSize}}
+    </select>
+</div>

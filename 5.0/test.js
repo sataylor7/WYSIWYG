@@ -1,0 +1,15 @@
+require.config(
+    {
+        paths:{
+            jQuery:"/team-beachbody-theme/javascript/jquery-1.9.1.min",
+            Handlebars:"/team-beachbody-theme/javascript/handlebars"
+        },
+        shim:{
+            jQuery:{
+                exports:"$"
+            },
+            Handlebars:{
+                exports:"Handlebars"
+            }
+        }
+    });

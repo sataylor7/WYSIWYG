@@ -1,0 +1,84 @@
+$emotiWidth : 24px;
+$emotiHeight : 24px;
+
+
+#HTML{
+  background-position: 0 0;
+}
+#table{
+  background-position: -37px -63px;
+}
+#clear{
+  background-position: -20px -63px;
+}
+
+ul.emoti {
+  li{
+    background:transparent url('../../images/emoticons/smilies.gif') no-repeat;
+    a{
+      display: block;
+      text-indent: -9999px;
+      height: $emotiWidth;
+      width: $emotiHeight;
+    }
+  }
+  #happyEyesClosed{
+    background-position: 0 0;
+  }
+  #inlove{
+    background-position: -25px 0;
+  }
+  #stonedHappy{
+    background-position: -50px 0;
+  }
+  #yawn{
+    background-position: -76px 0;
+  }
+  #sleepy{
+    background-position: -103px 0;
+  }
+  #scared{
+    background-position: -130px 0;
+  }
+  #meh{
+    background-position: -155px 0;
+  }
+  #oddHappy{
+    background-position: -182px 0;
+  }
+
+  #surprised{
+    background-position: 0 -29px;
+  }
+  #superHappy{
+    background-position: -25px -29px;
+  }
+  #tongueOut{
+    background-position: -50px -29px;
+  }
+  #evilGrin{
+    background-position: -76px -29px;
+  }
+  #mad{
+    background-position: -103px -29px;
+  }
+  #sunglasses{
+    background-position: -131px -29px;
+  }
+  #crying{
+    background-position: -155px -29px;
+  }
+  #blush{
+    background-position: -182px -29px;
+  }
+
+  #sad{
+    background-position: -1px -60px;
+  }
+  #money{
+    background-position: -25px -60px;
+  }
+  #dissappointed{
+    background-position: -50px -60px;
+  }
+}

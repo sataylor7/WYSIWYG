@@ -1,0 +1,40 @@
+$iconWidth : 16px;
+$iconHeight : 16px;
+
+.left{
+  float: left;
+}
+.right{
+  float:right;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hidden{
+  display: none;
+}
+ul{
+  list-style-type:none;
+  float:left;
+  margin: 5px 5px 5px 0;
+  padding: 0;
+
+  li{
+    display: inline-block;
+  }
+  &.basic,
+  &.links,
+  &.htmlOptions{
+    li{
+      background: transparent url('../images/icons/icons.png') no-repeat;
+      a{
+        text-indent: -9999px;
+        display: block;
+        width:$iconWidth;
+        height:$iconHeight;
+      }
+    }
+  }
+}

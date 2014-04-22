@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testing require</title>
+    <style>
+        #container{
+            width:650px;
+            margin: 15px auto;
+            border: 1px solid green;
+            padding:10px;
+        }
+    </style>
+    <link href="css/common.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles/basic.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles/advanced.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles/full.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+
+<section id="container" class="group">
+    <div class="controls group">
+
+    </div>
+    <div class="wysi">
+        <textarea id="myTA"></textarea>
+    </div>
+</section>
+
+<script src="libs/html5shiv.js"></script>
+<script data-main="js/config/wysiwyg.config" src="libs/require.js"></script>
+<script src="js/wysiwyg.js"></script>
+<script src="libs/handlebars-v1.3.0.js"></script>
+<script src="templates/templates.js"></script>
+</body>
+</html>

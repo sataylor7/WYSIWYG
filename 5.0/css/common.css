@@ -1,0 +1,28 @@
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.hidden {
+  display: none; }
+
+ul {
+  list-style-type: none;
+  float: left;
+  margin: 5px 5px 5px 0;
+  padding: 0; }
+  ul li {
+    display: inline-block; }
+  ul.basic li, ul.links li, ul.htmlOptions li {
+    background: transparent url("../images/icons/icons.png") no-repeat; }
+    ul.basic li a, ul.links li a, ul.htmlOptions li a {
+      text-indent: -9999px;
+      display: block;
+      width: 16px;
+      height: 16px; }

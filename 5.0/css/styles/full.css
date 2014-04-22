@@ -1,0 +1,54 @@
+#HTML {
+  background-position: 0 0; }
+
+#table {
+  background-position: -37px -63px; }
+
+#clear {
+  background-position: -20px -63px; }
+
+ul.emoti li {
+  background: transparent url("../../images/emoticons/smilies.gif") no-repeat; }
+  ul.emoti li a {
+    display: block;
+    text-indent: -9999px;
+    height: 24px;
+    width: 24px; }
+ul.emoti #happyEyesClosed {
+  background-position: 0 0; }
+ul.emoti #inlove {
+  background-position: -25px 0; }
+ul.emoti #stonedHappy {
+  background-position: -50px 0; }
+ul.emoti #yawn {
+  background-position: -76px 0; }
+ul.emoti #sleepy {
+  background-position: -103px 0; }
+ul.emoti #scared {
+  background-position: -130px 0; }
+ul.emoti #meh {
+  background-position: -155px 0; }
+ul.emoti #oddHappy {
+  background-position: -182px 0; }
+ul.emoti #surprised {
+  background-position: 0 -29px; }
+ul.emoti #superHappy {
+  background-position: -25px -29px; }
+ul.emoti #tongueOut {
+  background-position: -50px -29px; }
+ul.emoti #evilGrin {
+  background-position: -76px -29px; }
+ul.emoti #mad {
+  background-position: -103px -29px; }
+ul.emoti #sunglasses {
+  background-position: -131px -29px; }
+ul.emoti #crying {
+  background-position: -155px -29px; }
+ul.emoti #blush {
+  background-position: -182px -29px; }
+ul.emoti #sad {
+  background-position: -1px -60px; }
+ul.emoti #money {
+  background-position: -25px -60px; }
+ul.emoti #dissappointed {
+  background-position: -50px -60px; }

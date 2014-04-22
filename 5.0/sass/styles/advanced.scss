@@ -1,0 +1,28 @@
+$colorList : white snow GhostWhite WhiteSmoke  FloralWhite  AliceBlue  Azure  LavenderBlush  Ivory  HoneyDew  MintCream  Beige  LemonChiffon  Linen  LightYellow  LightGoldenRodYellow  OldLace SeaShell  AntiqueWhite  BlanchedAlmond  Bisque  PapayaWhip  Moccasin  NavajoWhite  PeachPuff  MistyRose  Pink  HotPink  DeepPink  Red  Crimson  IndianRed  FireBrick  DarkRed  Maroon  Plum  Violet  PaleVioletRed  MediumVioletRed  MediumOrchid  MediumPurple  DarkOrchid  DarkViolet  BlueViolet  DarkMagenta  Purple  Indigo  LightCyan  PaleTurquoise  PowderBlue  LightBlue  LightSkyBlue  SkyBlue  Cyan  Aquamarine  Turquoise  MediumTurquoise  DarkTurquoise  DeepSkyBlue  DodgerBlue  RoyalBlue  CornflowerBlue  SlateBlue  SteelBlue  CadetBlue  DarkCyan  Teal  Blue  MediumBlue  DarkSlateBlue  DarkBlue  Navy  MidnightBlue  PaleGreen  LightGreen  Yellow  GreenYellow  Chartreuse  LawnGreen  Lime  SpringGreen  MediumSpringGreen  MediumAquaMarine  YellowGreen  DarkSeaGreen  ForestGreen  Green  DarkGreen  Olive  DarkOliveGreen  OliveDrab  PaleGoldenRod  Khaki  Gold  GoldenRod  DarkKhaki  DarkGoldenRod  SandyBrown  LightSalmon  Orange  Darkorange  DarkSalmon  Coral  Chocolate  Peru  Tan  BurlyWood  Sienna  SaddleBrown  Brown  LightGray  Silver  DarkGray  Gray  DimGray  LightSlateGray  SlateGray  DarkSlateGray  Black;
+
+$colorWidth : 16px;
+$colorHeight : 16px;
+
+#createLink{
+  background-position: -55px -47px;
+}
+#unLink{
+  background-position: -72px -47px;
+}
+
+@each $color in $colorList {
+
+  ul.colors {
+     li##{$color}{
+
+       a{
+         display: block;
+         background:$color;
+         text-indent: -9999px;
+         width: $colorWidth;
+         height: $colorHeight;
+         border: 1px solid #ededed;
+       }
+    }
+  }
+}
