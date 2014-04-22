@@ -1,11 +1,20 @@
+/**
+ * WYSIWYG builder module
+ * this takes the textarea that you want to 'become' the rich text area and renders it
+ * the command function deals with all the execCommand functions
+ * requires jquery
+ * @author S.A.Taylor
+ * @version 5.0
+ */
 define(['jQuery'],function(jq){
-
+    "use strict";
     /**
      *
      * @type {string}
      */
     var rte = '',
         fontAttr = '',
+        url,
         viewMode = 1,
         emoticonURL = 'images/emoticons/',
         newURL = window.location.href.split('index.html');
@@ -38,7 +47,7 @@ define(['jQuery'],function(jq){
          * @param id
          */
         command : function(action, actionName, id){
-            console.log(action, actionName);
+
             switch (actionName){
                 case 'btn' :
                     rte.contentWindow.document.execCommand(action,"",null);
@@ -47,13 +56,13 @@ define(['jQuery'],function(jq){
                     rte.contentWindow.document.execCommand('foreColor',"",action);
                 break;
                 case 'lnk' :
-                    if(action == 'createLink'){
-                        var url = prompt('Please enter the URL (http://example.com)');
+                    if(action === 'createLink'){
+                        url = prompt('Please enter the URL (http://example.com)');
                     }
                     rte.contentWindow.document.execCommand(action,"",url);
                 break;
                 case 'font' :
-                    if(id == 'fontName'){
+                    if(id === 'fontName'){
                         fontAttr = 'fontName';
                     }else {
                         fontAttr = 'fontSize';
@@ -65,9 +74,9 @@ define(['jQuery'],function(jq){
                     rte.contentWindow.document.execCommand('insertImage',"",myURL);
                 break;
                 case 'htm' :
-                    if(action == 'clear'){
+                    if(action === 'clear'){
                         this.clear(rte);
-                    }else if(action == 'table'){
+                    }else if(action === 'table'){
                         this.insertTable(rte);
                     }else{
                         this.viewHTML(rte, id);
@@ -112,7 +121,7 @@ define(['jQuery'],function(jq){
 
                 range = document.createRange();
 
-                if (container.nodeType == 3 && insertNode.nodeType == 3) {
+                if (container.nodeType === 3 && insertNode.nodeType === 3) {
 
                     container.insertData(pos, insertNode.nodeValue);
                     range.setEnd(container, pos + insertNode.length);
@@ -120,7 +129,7 @@ define(['jQuery'],function(jq){
 
                 } else {
                     var afterNode;
-                    if (container.nodeType == 3) {
+                    if (container.nodeType === 3) {
                         var textNode = container;
                         container = textNode.parentNode;
 
@@ -174,7 +183,7 @@ define(['jQuery'],function(jq){
         viewHTML : function(frameName, controls){
 
             var iHTML, iText;
-                if (viewMode != 1) {
+                if (viewMode !== 1) {
                     if(frameName.contentWindow.document.body.innerText){
                         iText = frameName.contentWindow.document.body.innerText;
                     }else{
@@ -197,6 +206,6 @@ define(['jQuery'],function(jq){
                 }
 
         }
-    }
+    };
 
 });

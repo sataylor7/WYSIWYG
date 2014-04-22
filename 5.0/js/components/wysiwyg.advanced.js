@@ -5,7 +5,7 @@
  * @version 5.0
  */
 define(['jQuery', '../components/wysiwyg.basic', '../components/wysiwyg.colors'], function(jq, basic, color){
-
+        "use strict";
         return{
             /**
              * populates the advancedButtons template with the buttons obj

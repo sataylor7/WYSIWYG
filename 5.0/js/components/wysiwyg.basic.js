@@ -5,7 +5,7 @@
  * @version 5.0
  */
 define(['jQuery'], function(jq){
-
+    "use strict";
     return{
         /**
          * populates the basicButtons template

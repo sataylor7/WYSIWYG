@@ -1,4 +1,5 @@
 require(['../../libs/jquery.noconflict','../components/wysiwyg.allButtons','../components/wysiwyg.builder'], function(jq, all, wysi){
+    "use strict";
     var test = jq('.controls'),
         textArea = jq('#myTA'),
         rteWidth = 630,
@@ -16,9 +17,9 @@ require(['../../libs/jquery.noconflict','../components/wysiwyg.allButtons','../c
             var action = this.value,
                 actionName = this.className,
                 actionId = this.id;
-            console.log(actionId);
+
             wysi.command(action,actionName, actionId);
-        })
+        });
     });
     wysi.render(textArea, rteWidth, rteHeight, rteName);
 });
