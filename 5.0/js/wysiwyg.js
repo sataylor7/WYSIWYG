@@ -21,5 +21,6 @@ require(['../../libs/jquery.noconflict','../components/wysiwyg.allButtons','../c
             wysi.command(action,actionName, actionId);
         });
     });
+
     wysi.render(textArea, rteWidth, rteHeight, rteName);
 });
